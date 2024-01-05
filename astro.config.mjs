@@ -6,4 +6,14 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   output: 'server',
   integrations: [tailwind()],
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'ca'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+    // fallback: {
+    //   ca: 'es',
+    // }
+  }
 });
