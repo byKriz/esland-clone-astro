@@ -1,5 +1,10 @@
 ---
 import BentoItem from "../bento/BentoItem.astro";
+
+const baseBentoStyles = `absolute left-0 top-0 bottom-0 w-full rounded-xl
+      transition-scale duration-1000 ease-in-out opacity-90 bg-center
+      bg-cover bg-no-repeat bg-blend-luminosity
+      group-hover:scale-110 -z-10`;
 ---
 
 <section
@@ -11,10 +16,7 @@ import BentoItem from "../bento/BentoItem.astro";
   >
     <div
       slot="image"
-      class="absolute left-0 top-0 bottom-0 w-full rounded-xl
-      transition-scale duration-1000 ease-in-out opacity-90 bg-center
-      bg-cover bg-no-repeat bg-blue-950 bg-blend-luminosity
-      group-hover:scale-110 -z-10"
+      class={`${baseBentoStyles} bg-blue-700/50`}
       style="background-image: url('/images/mountain.webp')"
     >
     </div>
@@ -33,10 +35,7 @@ import BentoItem from "../bento/BentoItem.astro";
   >
     <div
       slot="image"
-      class="absolute left-0 top-0 bottom-0 w-full rounded-xl
-      transition-scale duration-1000 ease-in-out opacity-90 bg-center
-      bg-cover bg-no-repeat bg-blue-900 bg-blend-luminosity
-      group-hover:scale-110 -z-10"
+      class={`${baseBentoStyles} bg-blue-800`}
       style="background-image: url('/images/pistas.png')"
     >
     </div>
@@ -54,10 +53,7 @@ import BentoItem from "../bento/BentoItem.astro";
   >
     <div
       slot="image"
-      class="absolute left-0 top-0 bottom-0 w-full rounded-xl
-  transition-scale duration-1000 ease-in-out opacity-90 bg-center
-  bg-cover bg-no-repeat bg-blue-950 bg-blend-luminosity
-  group-hover:scale-110 -z-10"
+      class={`${baseBentoStyles} bg-blue-900`}
       style="background-image: url('/images/grefposing.png')"
     >
     </div>
@@ -75,10 +71,7 @@ import BentoItem from "../bento/BentoItem.astro";
   >
     <div
       slot="image"
-      class="absolute left-0 top-0 bottom-0 w-full rounded-xl
-  transition-scale duration-1000 ease-in-out opacity-90 bg-center
-  bg-cover bg-no-repeat bg-blue-950 bg-blend-luminosity
-  group-hover:scale-110 -z-10"
+      class={`${baseBentoStyles} bg-blue-950`}
       style="background-image: url('/images/laptop.png')"
     >
     </div>
