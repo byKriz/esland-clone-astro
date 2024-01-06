@@ -12,10 +12,10 @@ const baseBentoStyles = `absolute left-0 top-0 bottom-0 w-full rounded-xl
 ---
 
 <section
-  class="w-full max-w-[1400px] grid grid-cols-1 lg:grid-cols-10 auto-rows-[30rem] gap-4 mx-auto p-20"
+  class="w-full max-w-[1400px] grid grid-cols-1  lg:grid-cols-10 auto-rows-[30rem] gap-4 mx-auto p-20"
 >
   <BentoItem
-    class="col-span-10 md:col-span-4"
+    class="col-span-10 md:col-span-6 lg:col-span-4"
     title={i18n?.BENTO_TITLE_1 as string}
   >
     <div
@@ -54,7 +54,7 @@ const baseBentoStyles = `absolute left-0 top-0 bottom-0 w-full rounded-xl
     <p slot="content" class="max-w-xl" set:html={i18n?.BENTO_CONTENT_3} />
   </BentoItem>
   <BentoItem
-    class="col-span-10 md:col-span-4"
+    class="col-span-10 md:col-span-6 lg:col-span-4"
     title={i18n?.BENTO_TITLE_4 as string}
   >
     <div
